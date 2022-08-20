@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-grey">
+      <nav>
+        <div class="menu-main">
+          <ul>
+            <li><a href="#">MAIN</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#proects">PROECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="bg-grey">
+      <div class="container">
+        <div class="box-hello">
+          <ul>
+            <li>
+              <h4>— HELLO</h4>
+            </li>
+            <li>
+              <h1>I'm <span>Sergey</span> Sugakov</h1>
+            </li>
+            <li>
+              <p>python developer</p>
+            </li>
+            <li>
+              <a href="static/files/sergey_sugakov_cv.pdf" target="_blank"
+                ><button class="btn-1">DOWNLOAD CV</button></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box-hello">
+          <img src="static/img/face-360-440.jpg" alt="Sugakov Sergey photo" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" id="about">
+      <div class="container">
+        <div class="box-about-1">
+          <img
+            src="static/img/ava-300-300.jpg"
+            alt="Sugakov Sergey background"
+          />
+        </div>
+        <div class="box-about-2">
+          <ul>
+            <li>
+              <h3>About Me</h3>
+            </li>
+            <li>
+              <p>
+                I'm Junior Python Developer. Completed several IT courses and
+                study everything, related to programming on my own. Now I'm
+                applying the knowledge to automate processes at the current
+                place of work.
+              </p>
+            </li>
+            <li>
+              <img
+                src="static/img/signature-blue.jpg"
+                alt="Sugakov's Sergey signature"
+                width="180px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light-grey" id="skills">
+      <div class="container">
+        <div class="box-skills-1">
+          <h3>Skills Overview</h3>
+          <hr />
+        </div>
+        <div class="box-skills-2">
+          <p><b>Backend</b></p>
+          <ol>
+            <li>Python /OOP</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>SQL</li>
+          </ol>
+        </div>
+        <div class="box-skills-2">
+          <p><b>Frontend</b></p>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+          </ol>
+        </div>
+        <div class="box-skills-2">
+          <p><b>Other stacks</b></p>
+          <ol>
+            <li>PyCharm</li>
+            <li>Jira</li>
+            <li>Git</li>
+            <li>English B1/B2</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box-proect-1">
+        <h1>Last Projects</h1>
+      </div>
+      <div class="box-proect-2">
+        <div class="image">
+          <img
+            src="static/img/proects/proect_01-500-300.jpg"
+            alt="Proect 1 image"
+          />
+        </div>
+        <div class="text">
+          <p id="proect-title">About me site</p>
+          <p id="proect-preview">
+            My own page for the presentation of skills and abilities. A little
+            bit about me and my biography
+          </p>
+          <p id="stack">HTML - CSS - Python</p>
+          <p id="togithub"><a href="#">View on GitHub</a></p>
+        </div>
+      </div>
+      <div class="box-proect-2">
+        <div class="image">
+          <img
+            src="static/img/proects/proect_01-500-300.jpg"
+            alt="Proect 1 image"
+          />
+        </div>
+        <div class="text">
+          <p id="proect-title">About me site</p>
+          <p id="proect-preview">
+            My own page for the presentation of skills and abilities. A little
+            bit about me and my biography
+          </p>
+          <p id="stack">HTML - CSS - Python</p>
+          <p id="togithub"><a href="#">View on GitHub</a></p>
+        </div>
+      </div>
+      <div class="box-proect-2">
+        <div class="image">
+          <img
+            src="static/img/proects/proect_01-500-300.jpg"
+            alt="Proect 1 image"
+          />
+        </div>
+        <div class="text">
+          <p id="proect-title">About me site</p>
+          <p id="proect-preview">
+            My own page for the presentation of skills and abilities. A little
+            bit about me and my biography
+          </p>
+          <p id="stack">HTML - CSS - Python</p>
+          <p id="togithub"><a href="#">View on GitHub</a></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="box-footer-1">
+          <p>© 2022, <a href="https://www.sugakov.pro">sugakov.pro</a></p>
+        </div>
+        <div class="box-footer-2">
+          <p>linkedin</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <br />
+</html>
