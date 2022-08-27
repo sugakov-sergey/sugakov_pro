@@ -1,196 +1,263 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no,
-          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="bg-grey">
-      <nav>
-        <div class="menu-main">
-          <ul>
-            <li><a href="#">MAIN</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#proects">PROECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+{% extends "base.html" %} {% block title %} About Me | Sugakov Sergey {%endblock
+%} {% block page_content %}
 
-    <div class="bg-grey">
-      <div class="container">
-        <div class="box-hello">
-          <ul>
-            <li>
-              <h4>— HELLO</h4>
-            </li>
-            <li>
-              <h1>I'm <span>Sergey</span> Sugakov</h1>
-            </li>
-            <li>
-              <p>python developer</p>
-            </li>
-            <li>
-              <a href="static/files/sergey_sugakov_cv.pdf" target="_blank"
-                ><button class="btn-1">DOWNLOAD CV</button></a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="box-hello">
-          <img src="static/img/face-360-440.jpg" alt="Sugakov Sergey photo" />
-        </div>
-      </div>
+<div class="bg-grey">
+  <div class="container">
+    <div class="box-hello">
+      <ul>
+        <li>
+          <h4>— HELLO</h4>
+        </li>
+        <li>
+          <h1>I'm <span>Sergey</span> Sugakov</h1>
+        </li>
+        <li>
+          <p>python developer</p>
+        </li>
+        <li>
+          <a href="static/files/sergey_sugakov_cv.pdf" target="_blank"
+            ><button class="btn-1">DOWNLOAD CV</button></a
+          >
+        </li>
+      </ul>
     </div>
+    <div class="box-hello">
+      <img src="static/img/face-360-440.jpg" alt="Sugakov Sergey photo" />
+    </div>
+  </div>
+</div>
 
-    <div class="bg-white" id="about">
-      <div class="container">
-        <div class="box-about-1">
+<div class="bg-white" id="about">
+  <div class="container">
+    <div class="box-about-1">
+      <img src="static/img/ava-300-300.jpg" alt="Sugakov Sergey background" />
+    </div>
+    <div class="box-about-2">
+      <ul>
+        <li>
+          <h3>About Me</h3>
+        </li>
+        <li>
+          <p>
+            I'm Junior Python Developer. Completed several IT courses and study
+            everything, related to programming on my own. Now I'm applying the
+            knowledge to automate processes at the current place of work.
+          </p>
+          <p>
+            For more info about me find in
+            <a href="/biography">biography</a>
+          </p>
+        </li>
+        <li>
           <img
-            src="static/img/ava-300-300.jpg"
-            alt="Sugakov Sergey background"
+            src="static/img/signature-blue.jpg"
+            alt="Sugakov's Sergey signature"
+            width="180px"
           />
-        </div>
-        <div class="box-about-2">
-          <ul>
-            <li>
-              <h3>About Me</h3>
-            </li>
-            <li>
-              <p>
-                I'm Junior Python Developer. Completed several IT courses and
-                study everything, related to programming on my own. Now I'm
-                applying the knowledge to automate processes at the current
-                place of work.
-              </p>
-            </li>
-            <li>
-              <img
-                src="static/img/signature-blue.jpg"
-                alt="Sugakov's Sergey signature"
-                width="180px"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
 
-    <div class="bg-light-grey" id="skills">
-      <div class="container">
-        <div class="box-skills-1">
-          <h3>Skills Overview</h3>
-          <hr />
-        </div>
-        <div class="box-skills-2">
-          <p><b>Backend</b></p>
-          <ol>
-            <li>Python /OOP</li>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>SQL</li>
-          </ol>
-        </div>
-        <div class="box-skills-2">
-          <p><b>Frontend</b></p>
-          <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-          </ol>
-        </div>
-        <div class="box-skills-2">
-          <p><b>Other stacks</b></p>
-          <ol>
-            <li>PyCharm</li>
-            <li>Jira</li>
-            <li>Git</li>
-            <li>English B1/B2</li>
-          </ol>
-        </div>
-      </div>
+<div class="bg-light-grey" id="skills">
+  <div class="container">
+    <div class="box-skills-1">
+      <h3>Skills Overview</h3>
+      <hr />
     </div>
+    <div class="box-skills-2">
+      <p><b>Backend</b></p>
+      <ol>
+        <li>Python /OOP</li>
+        <li>Django</li>
+        <li>Flask</li>
+        <li>SQL</li>
+      </ol>
+    </div>
+    <div class="box-skills-2">
+      <p><b>Frontend</b></p>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+      </ol>
+    </div>
+    <div class="box-skills-2">
+      <p><b>Other stacks</b></p>
+      <ol>
+        <li>PyCharm</li>
+        <li>Jira</li>
+        <li>Git</li>
+        <li>English B1/B2</li>
+      </ol>
+    </div>
+    <div class="box-more">
+      <p>Check my <a href="#" target="_blank">certificates</a> here</p>
+    </div>
+  </div>
+</div>
 
+<div class="container" id="proects">
+  <div class="box-proect-1">
+    <h1>Last Projects</h1>
+  </div>
+  <div class="box-proect-2">
+    <div class="image">
+      <img
+        src="static/img/proects/proect_01-500-300.jpg"
+        alt="Proect 1 image"
+      />
+    </div>
+    <div class="text">
+      <p id="proect-title">Site About Me</p>
+      <p id="proect-preview">
+        My own page for the presentation of skills and abilities. A little bit
+        about me and my biography
+      </p>
+      <p id="stack">HTML - CSS - Python</p>
+      <p id="togithub">
+        <a href="https://github.com/sugakov-sergey/sugakov_pro"
+          >View on GitHub</a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="box-proect-2">
+    <div class="image">
+      <img
+        src="static/img/proects/proect_02-500-300.jpg"
+        alt="Proect 2 image"
+      />
+    </div>
+    <div class="text">
+      <p id="proect-title">Excel Price Parcer</p>
+      <p id="proect-preview">
+        Make cleared price-book from excel files. Solves the tasks of automatic
+        processing of big data
+      </p>
+      <p id="stack">Python <span>Pet Project</span></p>
+      <p id="togithub">
+        <a href="https://github.com/sugakov-sergey/Price_Parse_Script"
+          >View on GitHub</a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="box-proect-2">
+    <div class="image">
+      <img
+        src="static/img/proects/proect_03-500-300.jpg"
+        alt="Proect 3 image"
+      />
+    </div>
+    <div class="text">
+      <p id="proect-title">Password TG bot</p>
+      <p id="proect-preview">
+        Telegram bot helps to create secure passwords and check existing ones
+        for complexity.
+      </p>
+      <p id="stack">Python - Telebot</p>
+      <p id="togithub">
+        <a href="https://github.com/sugakov-sergey/PassMaker_bot"
+          >View on GitHub</a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="box-more">
+    <p>
+      More proects on
+      <a href="https://github.com/sugakov-sergey" target="_blank">GitHub</a>
+    </p>
+  </div>
+</div>
+
+<div class="container-2" id="contacts">
+  <div class="box-contacts-1">
+    <h3>Looking for a Python developer?</h3>
+    <p>
+      Let's make something new together. To start an initial chat, just drop me
+      an email or use the form on the contact form.
+    </p>
+  </div>
+  <div class="box-contacts-2">
+    <h3>Just Say Hello</h3>
+    <form method="post">
+      <input
+        type="text"
+        name="name"
+        id="title"
+        class="post-input"
+        placeholder="Your name"
+      />
+      <input
+        type="mail"
+        name="mail"
+        id="title"
+        class="post-input"
+        placeholder="Your mail"
+      />
+      <textarea
+        name="text"
+        id="mail"
+        class="post-textarea"
+        placeholder="Your message"
+      ></textarea>
+      <input type="submit" class="btn-2" value="HIRE ME" />
+    </form>
+  </div>
+</div>
+
+<div class="bg-light-grey">
+  <div class="container" id="contacts">
+    <div class="box-contacts-3">
+      <p>
+        <a href="mailto:me@sugakov.pro" title="mailto:me@sugakov.pro"
+          ><img src="static/img/icons/mail-30.png" />me@sugakov.pro</a
+        >
+      </p>
+      <p>
+        <a href="tel:+375296666405" title="Call me now"
+          ><img src="static/img/icons/gsm-30.png" />+37529 6666 405</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://t.me/ssergess"
+          target="_blank"
+          title="Write to telegram chat"
+          ><img src="static/img/icons/telegram-30.png" />telegram</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/sergey-sugakov/"
+          target="_blank"
+          title="Check my LinkedIn account"
+          ><img src="static/img/icons/linkedin-30.png" />linkedin</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://github.com/sugakov-sergey"
+          target="_blank"
+          title="Check my GitHub account"
+          ><img src="static/img/icons/github-30.png" />github</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
+
+{%endblock %} {% block footer %}
+<footer>
+  <div class="bg-light-grey">
     <div class="container">
-      <div class="box-proect-1">
-        <h1>Last Projects</h1>
-      </div>
-      <div class="box-proect-2">
-        <div class="image">
-          <img
-            src="static/img/proects/proect_01-500-300.jpg"
-            alt="Proect 1 image"
-          />
-        </div>
-        <div class="text">
-          <p id="proect-title">About me site</p>
-          <p id="proect-preview">
-            My own page for the presentation of skills and abilities. A little
-            bit about me and my biography
-          </p>
-          <p id="stack">HTML - CSS - Python</p>
-          <p id="togithub"><a href="#">View on GitHub</a></p>
-        </div>
-      </div>
-      <div class="box-proect-2">
-        <div class="image">
-          <img
-            src="static/img/proects/proect_01-500-300.jpg"
-            alt="Proect 1 image"
-          />
-        </div>
-        <div class="text">
-          <p id="proect-title">About me site</p>
-          <p id="proect-preview">
-            My own page for the presentation of skills and abilities. A little
-            bit about me and my biography
-          </p>
-          <p id="stack">HTML - CSS - Python</p>
-          <p id="togithub"><a href="#">View on GitHub</a></p>
-        </div>
-      </div>
-      <div class="box-proect-2">
-        <div class="image">
-          <img
-            src="static/img/proects/proect_01-500-300.jpg"
-            alt="Proect 1 image"
-          />
-        </div>
-        <div class="text">
-          <p id="proect-title">About me site</p>
-          <p id="proect-preview">
-            My own page for the presentation of skills and abilities. A little
-            bit about me and my biography
-          </p>
-          <p id="stack">HTML - CSS - Python</p>
-          <p id="togithub"><a href="#">View on GitHub</a></p>
-        </div>
+      <div class="box-footer-main">
+        <p>© 2022, <a href="https://www.sugakov.pro">sugakov.pro</a></p>
       </div>
     </div>
-
-    <footer>
-      <div class="container">
-        <div class="box-footer-1">
-          <p>© 2022, <a href="https://www.sugakov.pro">sugakov.pro</a></p>
-        </div>
-        <div class="box-footer-2">
-          <p>linkedin</p>
-        </div>
-      </div>
-    </footer>
-  </body>
-  <br />
-</html>
+  </div>
+</footer>
+{%endblock %}

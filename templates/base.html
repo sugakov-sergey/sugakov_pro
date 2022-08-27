@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style-biography.css') }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {% block nav %}
+    <nav>
+      <div class="bg-grey">
+        <div class="menu-main">
+          <ul>
+            <li><a href="/">MAIN</a></li>
+            <li><a href="/#about">ABOUT</a></li>
+            <li><a href="/#skills">SKILLS</a></li>
+            <li><a href="/#proects">PROECTS</a></li>
+            <li><a href="/#contacts">CONTACT</a></li>
+            <li><a href="/biography">BIOGRAPHY</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock %} {% block page_content %} {% endblock %} {% block footer %}
+    <footer>
+      <div class="bg-light-grey">
+        <div class="container">
+          <div class="box-footer-1">
+            <p>© 2022, <a href="https://www.sugakov.pro">sugakov.pro</a></p>
+          </div>
+          <div class="box-footer-2">
+            <ul>
+              <li>
+                <a href="mailto:me@sugakov.pro" title="mailto:me@sugakov.pro"
+                  ><img src="static/img/icons/mail-30.png"
+                /></a>
+              </li>
+              <li>
+                <a href="tel:+375296666405" title="Call me now"
+                  ><img src="static/img/icons/gsm-30.png" /></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://t.me/ssergess"
+                  target="_blank"
+                  title="Write to telegram chat"
+                  ><img src="static/img/icons/telegram-30.png" /></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sergey-sugakov/"
+                  target="_blank"
+                  title="Check my LinkedIn account"
+                  ><img src="static/img/icons/linkedin-30.png" /></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/sugakov-sergey"
+                  target="_blank"
+                  title="Check my GitHub account"
+                  ><img src="static/img/icons/github-30.png" /></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+  </body>
+</html>
