@@ -93,7 +93,10 @@
       </ol>
     </div>
     <div class="box-more">
-      <p>Check my <a href="#" target="_blank">certificates</a> here</p>
+      <p>
+        Check my
+        <a href="/biography#it-way" target="_blank">certificates</a> here
+      </p>
     </div>
   </div>
 </div>
@@ -181,12 +184,12 @@
       an email or use the form on the contact form.
     </p>
   </div>
-  <div class="box-contacts-2">
+  <div class="box-contacts-2"  id="scroll">
     <h3>Just Say Hello</h3>
-    <form method="post">
+    <form method="POST">
       <input
         type="text"
-        name="name"
+        name="title"
         id="title"
         class="post-input"
         placeholder="Your name"
@@ -194,17 +197,25 @@
       <input
         type="mail"
         name="mail"
-        id="title"
+        id="mail"
         class="post-input"
         placeholder="Your mail"
       />
       <textarea
         name="text"
-        id="mail"
+        id="text"
         class="post-textarea"
         placeholder="Your message"
       ></textarea>
-      <input type="submit" class="btn-2" value="HIRE ME" />
+      <input type="submit" class="btn-2" value="SEND TO ME" />
+      <div>
+        {% if scroll %}
+          <script>
+            document.location.hash = '#' + '{{ scroll }}';
+          </script>
+          <p id="sent-mail">Your message sent</p>
+        {% endif %}
+      </div>
     </form>
   </div>
 </div>

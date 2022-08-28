@@ -1,12 +1,19 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 from flask import url_for
+
 app = Flask(__name__, static_folder="static")
 
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def index():
+    if request.method == 'POST':
+        title = request.form['title']
+        mail = request.form['mail']
+        text = request.form['text']
+        msg = 'Your message sent'
+        context = {'msg': msg}
+        return render_template('index.html', context=context, scroll='scroll')
     return render_template('index.html')
-
 
 @app.route('/temp')
 def temp():
