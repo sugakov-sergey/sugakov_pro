@@ -184,7 +184,7 @@
       an email or use the form on the contact form.
     </p>
   </div>
-  <div class="box-contacts-2"  id="scroll">
+  <div class="box-contacts-2" id="scroll">
     <h3>Just Say Hello</h3>
     <form method="POST">
       <input
@@ -207,13 +207,22 @@
         class="post-textarea"
         placeholder="Your message"
       ></textarea>
-      <input type="submit" class="btn-2" value="SEND TO ME" />
+      {% if not scroll %}
+      <input
+        type="submit"
+        name="sent"
+        id="sent"
+        class="btn-2"
+        value="{{ context.btn_value }}"
+      />
+      {% endif %}
       <div>
         {% if scroll %}
-          <script>
-            document.location.hash = '#' + '{{ scroll }}';
-          </script>
-          <p id="sent-mail">Your message sent</p>
+        <input type="submit" name="sent" id="sent" class="btn-2" value="{{ context.btn_value }}" />
+        <script>
+          document.location.hash = "#" + "{{ scroll }}";
+        </script>
+        <p id="sent-mail">{{ context.msg }}</p>
         {% endif %}
       </div>
     </form>
