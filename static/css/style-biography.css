@@ -112,7 +112,7 @@
 }
 
 .body li {
-  margin: 10px 10px 0px 40px;
+  margin: 10px 10px 0px 30px;
   padding-left: 10px;
 }
 
@@ -196,7 +196,8 @@
     font-size: 31px;
     }
 
-    .biography-title {
+  .biography-title {
       margin: 20px 0;
     }
+
 }

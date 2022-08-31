@@ -30,12 +30,12 @@
       <div class="bg-grey">
         <div class="menu-main">
           <ul>
-            <li><a href="/">MAIN</a></li>
+            <li><a href="/" class="{% block index %}{% endblock %}">MAIN</a></li>
             <li><a href="/#about">ABOUT</a></li>
             <li><a href="/#skills">SKILLS</a></li>
-            <li><a href="/#proects">PROECTS</a></li>
-            <li><a href="/#contacts">CONTACT</a></li>
-            <li><a href="/biography">BIOGRAPHY</a></li>
+            <li><a href="/#projects">PROJECTS</a></li>
+            <li><a href="/#contacts">CONTACTS</a></li>
+            <li><a href="/biography" class="{% block biography %}{% endblock %}">BIOGRAPHY</a></li>
           </ul>
         </div>
       </div>

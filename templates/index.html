@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% block title %} About Me | Sugakov Sergey {%endblock
-%} {% block page_content %}
+%} 
+{% block index %}active{% endblock %}
+{% block page_content %}
 
 <div class="bg-grey">
   <div class="container">
@@ -44,7 +46,7 @@
             materials by myself.
           </p>
           <p>
-            For more information about me find in
+            More information about me find in
             <a href="/biography">biography</a> page
           </p>
         </li>
@@ -101,20 +103,20 @@
   </div>
 </div>
 
-<div class="container" id="proects">
-  <div class="box-proect-1">
+<div class="container" id="projects">
+  <div class="box-project-1">
     <h2>Last Projects</h2>
   </div>
-  <div class="box-proect-2">
+  <div class="box-project-2">
     <div class="image">
       <img
         src="static/img/proects/proect_01-500-300.jpg"
-        alt="Proect 1 image"
+        alt="Project 1 image"
       />
     </div>
     <div class="text">
-      <p id="proect-title">Site About Me</p>
-      <p id="proect-preview">
+      <p id="project-title">Site About Me</p>
+      <p id="project-preview">
         My own page for the presentation of skills and abilities. A little bit
         about me and my biography
       </p>
@@ -126,16 +128,16 @@
       </p>
     </div>
   </div>
-  <div class="box-proect-2">
+  <div class="box-project-2">
     <div class="image">
       <img
         src="static/img/proects/proect_02-500-300.jpg"
-        alt="Proect 2 image"
+        alt="Project 2 image"
       />
     </div>
     <div class="text">
-      <p id="proect-title">Excel Price Parcer</p>
-      <p id="proect-preview">
+      <p id="project-title">Excel Price Parcer</p>
+      <p id="project-preview">
         Make cleared price-book from excel files. Solves the tasks of automatic
         processing of big data
       </p>
@@ -147,16 +149,16 @@
       </p>
     </div>
   </div>
-  <div class="box-proect-2">
+  <div class="box-project-2">
     <div class="image">
       <img
         src="static/img/proects/proect_03-500-300.jpg"
-        alt="Proect 3 image"
+        alt="Project 3 image"
       />
     </div>
     <div class="text">
-      <p id="proect-title">Password TG bot</p>
-      <p id="proect-preview">
+      <p id="project-title">Password TG bot</p>
+      <p id="project-preview">
         Telegram bot helps to create secure passwords and check existing ones
         for complexity.
       </p>
@@ -170,7 +172,7 @@
   </div>
   <div class="box-more">
     <p>
-      More proects on
+      More projects on
       <a href="https://github.com/sugakov-sergey" target="_blank">GitHub</a>
     </p>
   </div>

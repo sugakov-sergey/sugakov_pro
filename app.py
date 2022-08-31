@@ -6,7 +6,15 @@ import config
 from moduls.mail import send_mail
 
 app = Flask(__name__, static_folder="static")
-application = app       # для работы на хостинге
+application = app  # для работы на хостинге
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    # в функцию `render_template()` передаем HTML-станицу с собственным
+    # дизайном, а так же явно устанавливаем статус 404
+    return render_template('404.html'), 404
+
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
