@@ -18,10 +18,13 @@
 
 body {
   font-family: Quicksand, Open Sans, sans-serif;
-  font-size: 24px;
   letter-spacing: 0.06rem;
   scroll-behavior: smooth;
 }
+
+
+/*  Block main */
+
 
 a {
   text-decoration: none;
@@ -35,10 +38,40 @@ a:hover  {
 }
 
 p {
-  margin: 25px 0;
+  padding: 20px 0;
+  font-size: 22px;
 }
 
-/*  Block main */
+
+
+h1 {
+  padding: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1 span {
+  color: var(--blue);
+}
+
+h2 {
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 26px;
+  padding: 20px 0;
+}
+
+h4 {
+  padding: 15px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
 
 .container {
   display: flex;
@@ -51,7 +84,7 @@ p {
 .menu-main {
   padding: 30px 0 40px 0;
   text-align: center;
-  font-size: 65%;
+
 }
 
 .menu-main ul {
@@ -83,26 +116,6 @@ p {
   padding-bottom: 3px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 150%;
-}
-
-h1 span {
-  color: var(--blue);
-}
-
-h3 {
-  margin: 0;
-  font-size: 130%;
-  padding: 10px 0 30px 0;
-}
-
-h4 {
-  font-weight: 500;
-  font-size: 60%;
-  padding-top: 20%;
-}
 
 .bg-grey {
   width: 100%;
@@ -141,13 +154,18 @@ h4 {
   padding: 0;
 }
 
+#hello {
+  font-size: 17px;
+  margin: 60px 0 -15px 0 ;
+  padding: 0;
+
+}
 
 .btn-1 {
   margin: 10% 0;
   padding: 12px 24px;
   border: 1px solid var(--blue);
   border-radius: 4px;
-  font-size: 60%;
   color: var(--blue);
   background: var(--grey);
   cursor: pointer;
@@ -192,11 +210,16 @@ h4 {
 .box-skills-2 li {
   margin: 10px 10px 10px 30px;
   padding-left: 10px;
+  font-size: 22px;
+}
+
+.box-skills-2 h3 {
+  margin: 10px 0 0 40px;
 }
 
 .box-skills-1 hr {
   width: 68%;
-  margin: 0 20% 0 16%;
+  margin: 10px 20% 0 16%;
   border: 0;
   background-color: var(--light-grey);
   border-top: 1px dashed #cccbd7;
@@ -216,16 +239,12 @@ h4 {
   text-align: left;
 }
 
-.box-skills-2 p {
-  margin: 10px 0 30px 0;
-  text-align: center;
-}
 
 
 /*  Block Proects */
 
 .box-proect-1 {
-  margin: 80px 0 50px 0;
+  margin: 70px 0 50px 0;
   flex-basis: 100%;
   text-align: center;
   padding: 0 1%;
@@ -267,12 +286,11 @@ h4 {
 }
 
 .text {
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-radius: 0 0 10px 10px;
   border: var(--blue) 1px solid;
   border-radius: 0 0 10px 10px;
   border-top: 0;
-  font-size: 80%;
 }
 
 .text p {
@@ -281,13 +299,19 @@ h4 {
 
 #proect-title {
   font-weight: bold;
-  font-size: 115%;
+  padding: 15px 0;
+}
+
+#proect-preview {
+  font-size: 20px;
+  padding: 15px 0;
 }
 
 #stack {
   color: var(--grey);
-  font-size: 80%;
   font-weight: 600;
+  font-size: 18px;
+  padding: 15px 0;
 }
 
 
@@ -298,6 +322,10 @@ h4 {
   color: white;
 }
 
+#togithub {
+  font-size: 20px;
+  padding: 15px 0 25px 0;
+}
 
 
 /*  Block Contacts */
@@ -333,12 +361,13 @@ h4 {
 .box-contacts-3 {
   padding-top: 20px;
   flex-basis: 70%;
-  font-size: 80%;
   text-align: left;
 }
 
 .box-contacts-3 p {
-  margin: 15px 0;
+  font-size: 18px;
+  margin: 0;
+  padding: 8px 0;
 }
 
 .box-contacts-4 {
@@ -374,14 +403,18 @@ h4 {
 
 .post-input {
   text-align: left;
+  color: var(--blue);
+  font-size: 20px;
   margin: 10px 0;
   width: 90%;
-  height: 36px;
+  height: 40px;
   border-radius: 4px;
   border: #cccbd7 1px solid;
 }
 
 .post-textarea {
+  font-size: 20px;
+  color: var(--blue);
   text-align: left;
   margin: 10px 0;
   width: 90%;
@@ -393,7 +426,6 @@ h4 {
 textarea,
 input {
   font-family: inherit;
-  font-size: 70%;
   padding: 0 5%;
 }
 
@@ -411,7 +443,6 @@ input:hover {
   padding: 12px 36px;
   border: 1px solid var(--blue);
   border-radius: 4px;
-  font-size: 60%;
   color: white;
   background: var(--blue);
   cursor: pointer;
@@ -439,7 +470,6 @@ input:hover {
   height: 34px;
   flex-basis: 20%;
   text-align: left;
-  font-size: 70%;
   font-weight: 600;
 }
 
@@ -448,7 +478,6 @@ input:hover {
   margin: 50px 0 70px 0;
   flex-basis: 40%;
   text-align: right;
-  font-size: 70%;
   font-weight: 600;
 }
 
@@ -457,9 +486,12 @@ input:hover {
   padding-top: 20px;
   flex-basis: 70%;
   text-align: center;
-  font-size: 70%;
   font-weight: 600;
   border-top:#dee2e6 1px solid ;
+}
+
+.box-footer-main p{
+  font-size: 18px;
 }
 
 .box-footer-2 img {
@@ -468,14 +500,65 @@ input:hover {
 
 #sent-mail {
   color: var(--pink);
-  margin: 0px;
-  font-size: 70%;
+  margin: 0;
+  padding: 0;
   font-weight: 600;
 }
 
 
+@media (max-width: 1100px) {
+ 
+  .box-proect-1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 5% 0;
+    padding: 0 1%;
+  }
+
+  .box-proect-2 {
+    flex-basis: 40%;
+    text-align: center;
+    margin: 2% 0;
+    padding: 0 1%;
+  }
+}
+
 
 @media (max-width: 700px) {
+
+  p {
+    font-size: 20px;
+  }
+
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h1 span {
+    color: var(--blue);
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  
+  .box-skills-2 li {
+    font-size: 20px;
+  }
+
+  .box-skills-2 {
+    margin: 0;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -515,21 +598,11 @@ input:hover {
     padding: 0 4%;
   }
 
-  .box-about-2 p,
-  .box-contacts-1 p {
-    font-size: 80%;
-  }
 
   .box-contacts-2 h3 {
     margin: 20px;
   }
-  h3 {
-    padding: 0;
-  }
 
-  h4 {
-    padding-top: 5%;
-  }
 
   .box-proect-1 {
     flex-basis: 100%;
@@ -541,7 +614,7 @@ input:hover {
   .box-proect-2 {
     width: 90%;
     text-align: center;
-    margin: 10% 0;
+    margin: 2% 0;
     padding: 0 2%;
   }
 
@@ -555,7 +628,7 @@ input:hover {
   .box-contacts-1 {
     text-align: center;
     flex-basis: 100%;
-    padding: 2% 2%;
+    padding: 2% 4%;
     margin: 0;
   }
 
@@ -591,7 +664,6 @@ input:hover {
   textarea,
   input {
     font-family: inherit;
-    font-size: 70%;
     padding: 0 3%;
   }
   
@@ -606,6 +678,7 @@ input:hover {
 
   .box-footer-main {
     margin: 30px 0 20px 0;
+
   }
 
   .box-footer-1,
@@ -613,24 +686,5 @@ input:hover {
    {
     margin: 40px 0 50px 0;
   }
-  
 
-}
-
-
-@media (max-width: 1100px) {
- 
-  .box-proect-1 {
-    flex-basis: 100%;
-    text-align: center;
-    margin: 5% 0;
-    padding: 0 1%;
-  }
-
-  .box-proect-2 {
-    flex-basis: 40%;
-    text-align: center;
-    margin: 1% 0;
-    padding: 0 1%;
-  }
 }

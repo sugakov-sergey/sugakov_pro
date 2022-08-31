@@ -1,10 +1,12 @@
+from smtplib import SMTPSenderRefused
+
 from flask import Flask, render_template, request
 
 import config
 from moduls.mail import send_mail
 
 app = Flask(__name__, static_folder="static")
-
+application = app       # для работы на хостинге
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
@@ -34,8 +36,20 @@ def index():
             msg = 'Your message sent'
             btn_value = 'OK'
             context = {'msg': msg, 'btn_value': btn_value}
-            send_mail(to_email=config.mail,
-                      subject=title, message=text, from_email=mail)
+            try:
+                send_mail(to_email=config.mail,
+                          subject=title, message=text, from_email=mail)
+            except SMTPSenderRefused:
+                msg = 'Invalid email'
+                btn_value = 'TRY AGAIN'
+                context = {'msg': msg, 'btn_value': btn_value}
+                return render_template('index.html', context=context, scroll='scroll')
+            except Exception:
+                msg = 'Sorry, something wrong!'
+                btn_value = 'TRY AGAIN'
+                context = {'msg': msg, 'btn_value': btn_value}
+                return render_template('index.html', context=context, scroll='scroll')
+
             return render_template('index.html', context=context, scroll='scroll')
 
     return render_template('index.html', context=context)
