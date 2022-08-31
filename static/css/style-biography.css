@@ -76,11 +76,12 @@
   background-color: #fff;
   border-radius: 100%;
   top: 9%;
-  right: 3px;
+  right: -8px;
   z-index: 99;
 }
 .entry .title h3 {
-  margin: 0;
+  margin: 0px;
+  padding: 0 5px 0 0 ;
 }
 .entry .title p {
   margin: 10px 0 0 0;
@@ -93,7 +94,7 @@
 }
 .entry .body p {
   line-height: 1.4em;
-  margin: 30px 0;
+  margin: 0px;
   font-weight: bold;
 }
 
@@ -184,8 +185,18 @@
     text-align: center;
   } 
   .entry .title {
-    padding-right: 15px
+    padding-right: 15px;
   }
 
+  .entry .title:before {
+    right: 5px;
+  }
 
+  .biography-title h1 {
+    font-size: 31px;
+    }
+
+    .biography-title {
+      margin: 20px 0;
+    }
 }
