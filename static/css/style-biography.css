@@ -160,9 +160,6 @@
     margin: 10px 0px 0px 25px;
     padding: 0;
   }
-  ::marker {
-    width: 10px;
-  }
 
   .body ol {
     list-style-image: url(/static/img/list-sm.png);

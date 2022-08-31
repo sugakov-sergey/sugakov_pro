@@ -512,7 +512,19 @@ input:hover {
     flex-basis: 100%;
     text-align: center;
     margin: 5% 0;
-    padding: 0 3%;
+    padding: 0 4%;
+  }
+
+  .box-about-2 p,
+  .box-contacts-1 p {
+    font-size: 80%;
+  }
+
+  .box-contacts-2 h3 {
+    margin: 20px;
+  }
+  h3 {
+    padding: 0;
   }
 
   h4 {
@@ -591,6 +603,17 @@ input:hover {
   input:hover {
     border-color: var(--blue);
   }
+
+  .box-footer-main {
+    margin: 30px 0 20px 0;
+  }
+
+  .box-footer-1,
+  .box-footer-2
+   {
+    margin: 40px 0 50px 0;
+  }
+  
 
 }
 
