@@ -39,13 +39,13 @@
         </li>
         <li>
           <p>
-            I'm Junior Python Developer. Completed several IT courses and study
-            everything, related to programming on my own. Now I'm applying the
-            knowledge to automate processes at the current place of work.
+            I'm a beginning Junior Python Developer. I've completed several IT
+            courses and trainings, studied vide range of programming-related
+            materials by myself.
           </p>
           <p>
-            For more info about me find in
-            <a href="/biography">biography</a>
+            For more information about me find in
+            <a href="/biography">biography</a> page
           </p>
         </li>
         <li>
@@ -179,9 +179,9 @@
 <div class="container-2" id="contacts">
   <div class="box-contacts-1">
     <h3>Looking for a Python developer?</h3>
+    <p>Let's make something new together.</p>
     <p>
-      Let's make something new together. To start an initial chat, just drop me
-      an email or use the form on the contact form.
+      To start the communication, just write me by email or use the contact form
     </p>
   </div>
   <div class="box-contacts-2" id="scroll">
@@ -218,7 +218,13 @@
       {% endif %}
       <div>
         {% if scroll %}
-        <input type="submit" name="sent" id="sent" class="btn-2" value="{{ context.btn_value }}" />
+        <input
+          type="submit"
+          name="sent"
+          id="sent"
+          class="btn-2"
+          value="{{ context.btn_value }}"
+        />
         <script>
           document.location.hash = "#" + "{{ scroll }}";
         </script>
