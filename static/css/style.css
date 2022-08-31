@@ -71,8 +71,9 @@ p {
 .menu-main a {
   text-decoration: none;
   border-bottom: 0px;
-  margin: 2%;
+  margin: 0 2%;
   color: var(--text-grey);
+  line-height: 2;
 }
 
 .menu-main a:hover {
@@ -483,8 +484,15 @@ input:hover {
   }
 
   .box-hello {
-    flex-basis: 100%;
+    flex-basis: 80%;
     text-align: center;
+  }
+
+  
+  .box-hello img {
+    width: 80%;
+    margin: 0;
+    padding: 0;
   }
 
   .box-about-1 {
@@ -492,6 +500,12 @@ input:hover {
     text-align: center;
     margin: 8% 0 0 0;
     padding: 0 1%;
+  }
+
+  .box-about-1 img {
+    width: 80%;
+    margin: 0;
+    padding: 0;
   }
 
   .box-about-2 {
@@ -513,7 +527,7 @@ input:hover {
   }
 
   .box-proect-2 {
-    width: 70%;
+    width: 90%;
     text-align: center;
     margin: 10% 0;
     padding: 0 2%;
