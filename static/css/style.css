@@ -28,13 +28,13 @@ body {
 }
 
 .not-found h1 {
-  font-size: 70px;
+  font-size: 80px;
   color: var(--blue);
   font-weight: bold;
+  padding: 0 10%;
 }
 
 /*  Block main */
-
 
 a {
   text-decoration: none;
@@ -42,8 +42,8 @@ a {
   color: var(--blue);
 }
 
-a:hover  {
-  border-bottom: 1px ;
+a:hover {
+  border-bottom: 1px;
   color: var(--pink);
 }
 
@@ -83,19 +83,23 @@ h4 {
   color: white;
 }
 
-
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 .menu-main {
-  padding: 30px 0 40px 0;
+  padding: 20px 0 20px 0;
   text-align: center;
+}
 
+.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .menu-main ul {
@@ -127,11 +131,17 @@ h4 {
   padding-bottom: 3px;
 }
 
-
 .bg-grey {
   width: 100%;
   height: 100%;
-  background-color: var(--grey);
+  background: var(--grey);
+  color: white;
+}
+
+.bg-gradient {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at 50% 100%, #1b5e98 0%, #394555 60%);
   color: white;
 }
 
@@ -149,13 +159,16 @@ h4 {
   color: black;
 }
 
-
 /*  Block Hello */
+
+.box-hello a {
+  border-bottom: 0px;
+}
 
 .box-hello {
   flex-basis: 34%;
   text-align: center;
-  padding: 0 1%;
+  padding: 40px 1% 0 0;
   margin-top: 10px;
 }
 
@@ -167,9 +180,8 @@ h4 {
 
 #hello {
   font-size: 17px;
-  margin: 60px 0 -15px 0 ;
+  margin: 60px 0 -15px 0;
   padding: 0;
-
 }
 
 .btn-1 {
@@ -178,7 +190,7 @@ h4 {
   border: 1px solid var(--blue);
   border-radius: 4px;
   color: var(--blue);
-  background: var(--grey);
+  background: None;
   cursor: pointer;
   letter-spacing: 0.08rem;
 }
@@ -190,12 +202,11 @@ h4 {
   color: white;
 }
 
-
 /*  Block About */
 
 .box-about-1 {
   flex-basis: 28%;
-  margin: 80px 0;
+  margin: 140px 0;
   text-align: center;
   padding: 0 1%;
 }
@@ -210,7 +221,6 @@ h4 {
 .box-about-2 img {
   margin-top: 20px;
 }
-
 
 /*  Block Skills */
 
@@ -237,7 +247,7 @@ h4 {
 }
 
 .box-skills-1 {
-  margin-top: 70px;
+  margin-top: 80px;
   flex-basis: 100%;
   text-align: center;
   padding: 0 1%;
@@ -250,27 +260,23 @@ h4 {
   text-align: left;
 }
 
-
-
 /*  Block Projects */
 
 .box-project-1 {
-  margin: 70px 0 50px 0;
+  margin: 80px 0 50px 0;
   flex-basis: 100%;
   text-align: center;
   padding: 0 1%;
-  
 }
 
 .box-project-2 {
   justify-content: space-between;
   flex-basis: 21%;
   margin: 0 2%;
-
 }
 
 .box-more {
-  margin: 40px 0 80px 0;
+  margin: 40px 0 40px 0;
   flex-basis: 100%;
   text-align: center;
   padding: 0 1%;
@@ -288,12 +294,10 @@ h4 {
   object-fit: cover;
   height: 100%;
   width: 100%;
-
 }
 
 .image:hover img {
   transform: scale(1.05);
-
 }
 
 .text {
@@ -325,7 +329,6 @@ h4 {
   padding: 15px 0;
 }
 
-
 #stack span {
   background-color: var(--grey);
   padding: 2px 8px;
@@ -338,11 +341,10 @@ h4 {
   padding: 15px 0 25px 0;
 }
 
-
 /*  Block Contacts */
 
 .container-2 {
-  margin-top: 40px;
+  padding-top: 90px;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -386,9 +388,9 @@ h4 {
   padding: 0 1%;
 }
 
-.box-contacts-3 img{
-  margin-right: 15px ;
-  vertical-align: middle
+.box-contacts-3 img {
+  margin-right: 15px;
+  vertical-align: middle;
 }
 
 .box-contacts-3 a,
@@ -399,17 +401,15 @@ h4 {
   color: var(--blue);
   font-weight: 600;
   border-bottom: 0px;
-
 }
 
 .box-contacts-3 a:hover,
 .box-footer-main a:hover,
 .box-footer-1 a:hover,
-.box-footer-2 a:hover  {
+.box-footer-2 a:hover {
   color: var(--pink);
   font-weight: 600;
 }
-
 
 /*  Block Form */
 
@@ -470,8 +470,6 @@ input:hover {
   font-weight: 600;
 }
 
-
-
 /*  Block Footer */
 
 .box-footer-1 p {
@@ -489,7 +487,6 @@ input:hover {
   order: 1;
 }
 
-
 .box-footer-2 {
   margin: 50px 0 70px 0;
   flex-basis: 40%;
@@ -504,10 +501,10 @@ input:hover {
   flex-basis: 70%;
   text-align: center;
   font-weight: 600;
-  border-top:#dee2e6 1px solid ;
+  border-top: #dee2e6 1px solid;
 }
 
-.box-footer-main p{
+.box-footer-main p {
   font-size: 18px;
 }
 
@@ -522,9 +519,7 @@ input:hover {
   font-weight: 600;
 }
 
-
 @media (max-width: 1100px) {
- 
   .box-project-1 {
     flex-basis: 100%;
     text-align: center;
@@ -540,13 +535,10 @@ input:hover {
   }
 }
 
-
 @media (max-width: 700px) {
-
   p {
     font-size: 20px;
   }
-
 
   h1 {
     font-size: 33px;
@@ -567,7 +559,7 @@ input:hover {
   h4 {
     font-size: 20px;
   }
-  
+
   .box-skills-2 li {
     font-size: 20px;
   }
@@ -576,10 +568,23 @@ input:hover {
     margin: 0;
   }
 
+  .box-skills-1 {
+    margin-top: 100px;
+  }
+
+
+  .box-more {
+    margin-bottom: 0px;
+  }
+
+  .box-more#check {
+    margin-bottom: 100px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
   }
 
@@ -589,7 +594,6 @@ input:hover {
     margin: 0px;
   }
 
-  
   .box-hello img {
     width: 80%;
     margin: 0;
@@ -599,7 +603,7 @@ input:hover {
   .box-about-1 {
     flex-basis: 100%;
     text-align: center;
-    margin: 8% 0 0 0;
+    margin: 100px 0 0 0;
     padding: 0 1%;
   }
 
@@ -612,20 +616,18 @@ input:hover {
   .box-about-2 {
     flex-basis: 100%;
     text-align: center;
-    margin: 5% 0;
+    margin: 20px 0 70px 0;
     padding: 0 4%;
   }
-
 
   .box-contacts-2 h3 {
     margin: 20px;
   }
 
-
   .box-project-1 {
     flex-basis: 100%;
     text-align: center;
-    margin: 5% 10%;
+    margin: 100px 0 20px 0;
     padding: 0 1%;
   }
 
@@ -669,7 +671,7 @@ input:hover {
     border-radius: 4px;
     border: #cccbd7 1px solid;
   }
-  
+
   .post-textarea {
     text-align: left;
     margin: 10px;
@@ -678,17 +680,17 @@ input:hover {
     border-radius: 4px;
     border: #cccbd7 1px solid;
   }
-  
+
   textarea,
   input {
     font-family: inherit;
     padding: 0 3%;
   }
-  
+
   textarea {
     padding-top: 3%;
   }
-  
+
   textarea:hover,
   input:hover {
     border-color: var(--blue);
@@ -696,12 +698,10 @@ input:hover {
 
   .box-footer-main {
     margin: 30px 0 20px 0;
-
   }
 
   .box-footer-1,
-  .box-footer-2
-   {
+  .box-footer-2 {
     margin: 40px 0 50px 0;
   }
 
@@ -713,4 +713,9 @@ input:hover {
     order: 1;
   }
 
+  
+.menu-main {
+  padding: 20px 0 10px 0;
+
+}
 }

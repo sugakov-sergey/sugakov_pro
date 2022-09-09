@@ -1,9 +1,9 @@
 {% extends "base.html" %} {% block title %} About Me | Sugakov Sergey {%endblock
-%} 
-{% block index %}active{% endblock %}
+%} {% block index %}active{% endblock %} 
+
 {% block page_content %}
 
-<div class="bg-grey">
+<div class="bg-gradient">
   <div class="container">
     <div class="box-hello">
       <ul>
@@ -24,7 +24,7 @@
       </ul>
     </div>
     <div class="box-hello">
-      <img src="static/img/face-360-440.jpg" alt="Sugakov Sergey photo" />
+      <img src="static/img/face-360-440-grad.webp" alt="Sugakov Sergey photo" />
     </div>
   </div>
 </div>
@@ -94,7 +94,7 @@
         <li>English B1/B2</li>
       </ol>
     </div>
-    <div class="box-more">
+    <div class="box-more" id="check">
       <p>
         Check my
         <a href="/biography#it-way" target="_blank">certificates</a> here

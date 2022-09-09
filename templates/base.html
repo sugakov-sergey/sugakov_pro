@@ -26,16 +26,22 @@
   </head>
   <body>
     {% block nav %}
-    <nav>
+    <nav class="fixed">
       <div class="bg-grey">
         <div class="menu-main">
           <ul>
-            <li><a href="/" class="{% block index %}{% endblock %}">MAIN</a></li>
+            <li>
+              <a href="/" class="{% block index %}{% endblock %}">MAIN</a>
+            </li>
             <li><a href="/#about">ABOUT</a></li>
             <li><a href="/#skills">SKILLS</a></li>
             <li><a href="/#projects">PROJECTS</a></li>
             <li><a href="/#contacts">CONTACTS</a></li>
-            <li><a href="/biography" class="{% block biography %}{% endblock %}">BIOGRAPHY</a></li>
+            <li>
+              <a href="/biography" class="{% block biography %}{% endblock %}"
+                >BIOGRAPHY</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -47,7 +53,7 @@
           <div class="box-footer-1">
             <p>© 2022, <a href="/">sugakov.pro</a></p>
           </div>
-          
+
           <div class="box-footer-2">
             <ul>
               <li>
@@ -57,32 +63,32 @@
               </li>
               <li>
                 <a href="tel:+375296666405" title="Call me now"
-                  ><img src="static/img/icons/gsm-30.png" /></a
-                >
+                  ><img src="static/img/icons/gsm-30.png"
+                /></a>
               </li>
               <li>
                 <a
                   href="https://t.me/ssergess"
                   target="_blank"
                   title="Write to telegram chat"
-                  ><img src="static/img/icons/telegram-30.png" /></a
-                >
+                  ><img src="static/img/icons/telegram-30.png"
+                /></a>
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/sergey-sugakov/"
                   target="_blank"
                   title="Check my LinkedIn account"
-                  ><img src="static/img/icons/linkedin-30.png" /></a
-                >
+                  ><img src="static/img/icons/linkedin-30.png"
+                /></a>
               </li>
               <li>
                 <a
                   href="https://github.com/sugakov-sergey"
                   target="_blank"
                   title="Check my GitHub account"
-                  ><img src="static/img/icons/github-30.png" /></a
-                >
+                  ><img src="static/img/icons/github-30.png"
+                /></a>
               </li>
             </ul>
           </div>
